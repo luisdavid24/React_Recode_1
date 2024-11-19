@@ -4,6 +4,13 @@ import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
 import "./App.css";
 
+const defaultTodos = [
+  { text: "Actividad1 ", completed: true },
+  { text: "Actividad2 ", completed: false },
+  { text: "Actividad3 ", completed: false },
+  { text: "Actividad4 ", completed: false },
+];
+
 function App() {
   return (
     <div className="App">
