@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import { TodoCounter } from "./TodoCounter";
+import { TodoSearch } from "./TodoSearch";
 import "./App.css";
 
 function App() {
