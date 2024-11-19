@@ -4,7 +4,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <TodoList />
+      <TodoCounter />
+      <TodoSearch />
+      <TodoList>
+        <TodoList />
+      </TodoList>
+      <CreateTodoButton />
     </div>
   );
 }
