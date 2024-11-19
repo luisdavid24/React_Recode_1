@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import { TodoCounter } from "./TodoCounter";
 import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
+import { TodoItem } from "./TodoItem";
 import "./App.css";
 
 const defaultTodos = [
@@ -22,10 +23,6 @@ function App() {
       {/* <CreateTodoButton /> */}
     </div>
   );
-}
-
-function TodoItem() {
-  return <h2>Prueba</h2>;
 }
 
 export default App;
