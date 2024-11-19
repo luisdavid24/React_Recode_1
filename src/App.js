@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import { TodoCounter } from "./TodoCounter";
 import { TodoSearch } from "./TodoSearch";
+import { TodoList } from "./TodoList";
 import "./App.css";
 
 function App() {
@@ -9,14 +10,14 @@ function App() {
       <TodoCounter />
       <TodoSearch />
       <TodoList>
-        <TodoList />
+        <TodoItem />
       </TodoList>
       {/* <CreateTodoButton /> */}
     </div>
   );
 }
 
-function TodoList() {
+function TodoItem() {
   return <h2>Prueba</h2>;
 }
 
