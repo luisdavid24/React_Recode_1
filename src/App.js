@@ -11,6 +11,7 @@ const defaultTodos = [
   { text: "Actividad2 ", completed: false },
   { text: "Actividad3 ", completed: true },
   { text: "Actividad4 ", completed: false },
+  { text: "manzana ", completed: false },
 ];
 
 function App() {
@@ -19,12 +20,20 @@ function App() {
 
   const completedTodos = todos.filter((todo) => todo.completed).length;
   console.log("Mira los cambios de searchValue: " + searchValue);
+
+  const totalTodos = todos.length;
+  // Aqui se agrego la funcion buscar en la barra
+  const searchedTodos = todos.filter((todo) => {
+    const todoText = todo.text.toLowerCase();
+    const searchText = searchValue.toLowerCase();
+    return todoText.includes(searchText);
+  });
   return (
     <React.Fragment>
-      <TodoCounter completed={completedTodos} total={25} />
+      <TodoCounter completed={completedTodos} total={totalTodos} />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
-        {defaultTodos.map((todo) => (
+        {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
             text={todo.text}
