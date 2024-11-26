@@ -13,8 +13,8 @@ import React from "react";
 //   { text: "Actividad4 ", completed: false },
 //   { text: "manzana ", completed: false },
 // ];
+// localStorage.setItem("TODOS", JSON.stringify(defaultTodos));
 // localStorage.removeItem("TODOS");
-// localStorage.setItem("TODOS", defaultTodos);
 function App() {
   const localStorageTodos = localStorage.getItem("TODOS");
   let parsedTodos;
@@ -26,6 +26,11 @@ function App() {
   }
   const [todos, setTodos] = React.useState(parsedTodos);
   const [searchValue, setSearchValue] = React.useState("");
+
+  const saveTodos = (newTodos) => {
+    localStorage.setItem("TODOS", JSON.stringify(newTodos));
+    setTodos(newTodos);
+  };
 
   const completedTodos = todos.filter((todo) => todo.completed).length;
   console.log("Mira los cambios de searchValue: " + searchValue);
@@ -42,13 +47,13 @@ function App() {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex((todo) => todo.text === text);
     newTodos[todoIndex].completed = true;
-    setTodos(newTodos);
+    saveTodos(newTodos);
   };
   const deleteTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex((todo) => todo.text === text);
     newTodos.splice(todoIndex, 1);
-    setTodos(newTodos);
+    saveTodos(newTodos);
   };
   return (
     <React.Fragment>
