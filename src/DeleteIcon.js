@@ -1,7 +1,7 @@
 import React from "react";
 import { TiDelete } from "react-icons/ti";
 
-function DeleteIcon(props) {
-  return <TiDelete className="Icon Icon-delete" />;
+function DeleteIcon({ onDeleted }) {
+  return <TiDelete className="Icon Icon-delete" onClick={onDeleted} />;
 }
 export { DeleteIcon };
