@@ -19,9 +19,16 @@ function App() {
   const [searchValue, setSearchValue] = React.useState("");
 
   const completedTodos = todos.filter((todo) => todo.completed).length;
-  console.log("Mira los cambios de searchValue: " + searchValue);
+  //console.log("Mira los cambios de searchValue: " + searchValue);
 
   const totalTodos = todos.length;
+
+  // La pregunta del millon en que orden se van a renderizar
+  console.log("-1-");
+  React.useEffect(() => {
+    console.log("-2-");
+  });
+  console.log("-3-");
   // Aqui se agrego la funcion buscar en la barra
   const searchedTodos = todos.filter((todo) => {
     const todoText = todo.text.toLowerCase();
@@ -41,6 +48,7 @@ function App() {
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
   };
+
   return (
     <AppUI
       completedTodos={completedTodos}
