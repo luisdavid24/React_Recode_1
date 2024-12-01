@@ -71,3 +71,25 @@ function App() {
 }
 
 export default App;
+
+//EXPLICACION DEL PORQUE USAMOS useEffect
+async function ejemploApi() {
+  const res = await fetch("https://www.google.com/");
+  const data = await res.json();
+  return data;
+}
+
+function Mensaje() {
+  const data = ejemploApi();
+  return <p>{data.Mensaje}</p>;
+}
+//Esta es la correcta implementacion
+function MensajeMejorado() {
+  const [state, setState] = React.useState({});
+  React.useEffect(() => {
+    const data = ejemploApi();
+    setState(data);
+  }, []);
+
+  return <p>{state.Messege || "Mensaje de carga :)"}</p>;
+}
