@@ -25,9 +25,17 @@ function App() {
 
   // La pregunta del millon en que orden se van a renderizar
   console.log("-1-");
+  // React.useEffect(() => {
+  //   console.log("-2-");
+  // });
+
+  // React.useEffect(() => {
+  //   console.log("-2-");
+  // }, []);
+
   React.useEffect(() => {
     console.log("-2-");
-  });
+  }, [totalTodos]);
   console.log("-3-");
   // Aqui se agrego la funcion buscar en la barra
   const searchedTodos = todos.filter((todo) => {
