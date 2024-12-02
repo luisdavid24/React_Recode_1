@@ -30,3 +30,13 @@ function useLocalStorage(itemName, initialValue) {
   return { item, saveItem, loading, error };
 }
 export { useLocalStorage };
+
+// const defaultTodos = [
+//   { text: "Actividad1 ", completed: true },
+//   { text: "Actividad2 ", completed: false },
+//   { text: "Actividad3 ", completed: true },
+//   { text: "Actividad4 ", completed: false },
+//   { text: "manzana ", completed: false },
+// ];
+// localStorage.setItem("TODOS", JSON.stringify(defaultTodos));
+// localStorage.removeItem("TODOS");
