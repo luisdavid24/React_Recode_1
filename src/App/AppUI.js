@@ -9,6 +9,7 @@ import { EmptyTodos } from "../EmptyTodos";
 import { CreateTodoButton } from "../CreateTodoButton/index";
 import React from "react";
 import { TodoContext } from "../TodoContext";
+import { Modal } from "../Modal";
 
 function AppUI() {
   const {
