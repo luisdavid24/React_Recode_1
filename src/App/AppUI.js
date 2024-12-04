@@ -11,8 +11,15 @@ import React from "react";
 import { TodoContext } from "../TodoContext";
 
 function AppUI() {
-  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
-    React.useContext(TodoContext);
+  const {
+    loading,
+    error,
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+  } = React.useContext(TodoContext);
   return (
     <React.Fragment>
       <TodoCounter />
@@ -34,6 +41,7 @@ function AppUI() {
         ))}
       </TodoList>
       <CreateTodoButton />
+      {openModal && <Modal>La funcion agrega tareas</Modal>}
     </React.Fragment>
   );
 }
