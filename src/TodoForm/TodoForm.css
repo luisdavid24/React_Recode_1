@@ -1,0 +1,73 @@
+/* Estilos generales del formulario */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  width: 80%;
+  height: 80px;
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 6px;
+  resize: none;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+form textarea:focus {
+  border-color: #6a1b9a;
+  outline: none;
+}
+
+.TodoBtnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TodoFormBtnCancelar {
+  background-color: #e57373;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.TodoFormBtnCancelar:hover {
+  background-color: #d32f2f;
+}
+
+.TodoFormBtnAgregar {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.TodoFormBtnAgregar:hover {
+  background-color: #388e3c;
+}

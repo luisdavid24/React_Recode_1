@@ -5,6 +5,7 @@ import { TodoItem } from "../TodoItem";
 import { TodosLoading } from "../TodosLoading";
 import { TodosError } from "../TodosError";
 import { EmptyTodos } from "../EmptyTodos";
+import { TodoForm } from "../TodoForm";
 
 import { CreateTodoButton } from "../CreateTodoButton/index";
 import React from "react";
@@ -42,7 +43,11 @@ function AppUI() {
         ))}
       </TodoList>
       <CreateTodoButton setOpenModal={setOpenModal} />
-      {openModal && <Modal>La funcion agrega tareas</Modal>}
+      {openModal && (
+        <Modal>
+          <TodoForm />
+        </Modal>
+      )}
     </React.Fragment>
   );
 }
