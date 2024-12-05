@@ -3,10 +3,11 @@ import "./TodoForm.css";
 import { TodoContext } from "../TodoContext";
 
 function TodoForm() {
-  const { setOpenModal } = React.useContext(TodoContext);
+  const { setOpenModal, addTodo } = React.useContext(TodoContext);
   const [newTodoValue, setNewTodoValue] = React.useState("");
 
   const onSubmit = (event) => {
+    addTodo(newTodoValue);
     event.preventDefault();
     setOpenModal(false);
   };
