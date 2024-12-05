@@ -41,7 +41,7 @@ function AppUI() {
           />
         ))}
       </TodoList>
-      <CreateTodoButton />
+      <CreateTodoButton setOpenModal={setOpenModal} />
       {openModal && <Modal>La funcion agrega tareas</Modal>}
     </React.Fragment>
   );
