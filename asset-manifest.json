@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/static/css/main.ad871a90.css",
-    "main.js": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/static/js/main.19d6006f.js",
-    "static/js/453.5e560239.chunk.js": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/static/js/453.5e560239.chunk.js",
-    "index.html": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/index.html",
-    "main.ad871a90.css.map": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/static/css/main.ad871a90.css.map",
-    "main.19d6006f.js.map": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/static/js/main.19d6006f.js.map",
-    "453.5e560239.chunk.js.map": "/Users/david/OneDrive/Documentos/Recode/React_Recode_1/build/static/js/453.5e560239.chunk.js.map"
+    "main.css": "./static/css/main.ad871a90.css",
+    "main.js": "./static/js/main.cdcf8417.js",
+    "static/js/453.5e560239.chunk.js": "./static/js/453.5e560239.chunk.js",
+    "index.html": "./index.html",
+    "main.ad871a90.css.map": "./static/css/main.ad871a90.css.map",
+    "main.cdcf8417.js.map": "./static/js/main.cdcf8417.js.map",
+    "453.5e560239.chunk.js.map": "./static/js/453.5e560239.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad871a90.css",
-    "static/js/main.19d6006f.js"
+    "static/js/main.cdcf8417.js"
   ]
 }
