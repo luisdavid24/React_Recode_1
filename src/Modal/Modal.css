@@ -1,12 +1,26 @@
 .ModalBackground {
-  background-color: rgba(32, 35, 41, 0.8);
+  background-color: rgba(185, 175, 199, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #f8f8f8;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  box-shadow: 0px 4px 10px #2d2d2d;
+  backdrop-filter: blur(5px);
+}
+
+.ModalContent {
+  background-color: #6a0dad;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px #1a1a1a;
+  width: 90%;
+  max-width: 600px;
+  color: #f8f8f8;
+  font-size: 16px;
+  text-align: center;
 }
